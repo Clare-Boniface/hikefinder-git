@@ -42,22 +42,39 @@
             <i class="fa-solid fa-x close-btn" id="close-btn"></i>
           </div>
           <ul class="hamburger-menu">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Explore</li>
-            <li class="nav-item">Sign Up</li>
-            <li class="nav-item">Log In</li>
+            <a href="#"><li class="nav-item active">Home</li></a>
+            <a href="#"><li class="nav-item">Explore</li></a>
+            <a href="#"><li class="nav-item">Sign Up</li></a>
+            <a href="#"><li class="nav-item">Log In</li></a>
           </ul>
         </nav>
-        <nav class="desktop-nav hidden"></nav>
+        <nav class="nav-desktop hidden">
+          <ul class="nav-desktop-menu">
+            <a href="#" class="nav-desktop-link"
+              ><li class="nav-desktop-item active">Home</li></a
+            >
+            <a href="#" class="nav-desktop-link"
+              ><li class="nav-desktop-item">Explore</li></a
+            >
+            <a href="#" class="nav-desktop-link"
+              ><li class="nav-desktop-item button nav-green">Sign Up</li></a
+            >
+            <a href="#" class="nav-desktop-link"
+              ><li class="nav-desktop-item button nav-white">Log In</li></a
+            >
+          </ul>
+        </nav>
       </header>
       <section class="hero-container">
-        <h2 class="hero-white-heading">Find Your Next</h2>
-        <h2 class="hero-yellow-heading">Adventure</h2>
-        <h3 class="hero-text">
-          Your next hiking adventure awaits. Get on the trail with detailed maps
-          and updates shared by hikers like you.
-        </h3>
-        <div class="search-container">
+        <div class="left">
+          <h2 class="hero-white-heading">Find Your Next</h2>
+          <h2 class="hero-yellow-heading">Adventure</h2>
+          <h3 class="hero-text">
+            Your next hiking adventure awaits. Get on the trail with detailed
+            maps and updates shared by hikers like you.
+          </h3>
+        </div>
+        <div class="search-container right">
           <img src="./images/search.svg" class="search-icon" />
           <input
             type="text"
@@ -71,8 +88,10 @@
         <section class="hike-container">
           <h2 class="hikes-heading">Hikes near Bergen</h2>
 
+<div class="attraction-container">
           <div class="attraction-wrapper">
             <img src="../images/image4.jpg" class="attraction-image" />
+            <div class="attraction-information">
             <h3 class="attraction-heading">Fløyen</h3>
             <p class="attraction-length">Length: 10.2km - Est. 5h</p>
             <p class="attraction-text">
@@ -82,9 +101,11 @@
             </p>
             <button class="learn-more-btn">LEARN MORE</button>
           </div>
+          </div>
 
           <div class="attraction-wrapper">
             <img src="../images/image6.jpg" class="attraction-image" />
+            <div class="attraction-information"></div>
             <h3 class="attraction-heading">Ulriken</h3>
             <p class="attraction-length">Length: 3.5 km - Est. 2 h 30 m</p>
             <p class="attraction-text">
@@ -94,9 +115,11 @@
             </p>
             <button class="learn-more-btn">LEARN MORE</button>
           </div>
+        </div>
 
           <div class="attraction-wrapper">
             <img src="../images/image7.jpg" class="attraction-image" />
+            <div class="attraction-information"></div>
             <h3 class="attraction-heading">Landåsfjellet</h3>
             <p class="attraction-length">Length: 3.5 km - Est. 2 h 30 m</p>
             <p class="attraction-text">
@@ -106,7 +129,10 @@
             </p>
             <button class="learn-more-btn">LEARN MORE</button>
           </div>
+        </div>
+      </div>
         </section>
+      </div>
       </main>
       <section class="notifications-container">
         <div class="notification-wrapper">
