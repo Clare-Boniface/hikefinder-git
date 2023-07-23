@@ -10,16 +10,44 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <div class="container">
-      <header class="logo-container">
-        <img src="./images/Polygon1.svg" class="polygon left-logo" />
-        <img src="./images/Polygon2.svg" class="polygon right-logo" />
-        <h1>HikeFinder</h1>
+      <header>
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="./images/Polygon1.svg" class="polygon left-logo" />
+            <img src="./images/Polygon2.svg" class="polygon right-logo" />
+            <h1>HikeFinder</h1>
+          </div>
 
-        <nav class="mobile-nav"></nav>
+          <div class="hamburger-icon-container">
+            <i
+              class="fa-solid fa-bars hamburger-icon"
+              id="mobile-hamburger-icon"
+            ></i>
+          </div>
+        </div>
+
+        <nav class="mobile-nav hidden" id="mobile-nav">
+          <div class="close-btn-wrapper">
+            <i class="fa-solid fa-x close-btn" id="close-btn"></i>
+          </div>
+          <ul class="hamburger-menu">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Explore</li>
+            <li class="nav-item">Sign Up</li>
+            <li class="nav-item">Log In</li>
+          </ul>
+        </nav>
         <nav class="desktop-nav hidden"></nav>
       </header>
       <section class="hero-container">
@@ -133,5 +161,6 @@
         <p class="footer-subtitle">Copyright 2023 Hikefinder</p>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
