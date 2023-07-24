@@ -305,6 +305,7 @@ footer {
   margin-right: 1em;
 }
 
+
 @media (min-width: 1028px) {
   .nav-desktop {
     display: block;
@@ -406,7 +407,6 @@ line-height: normal;
 
   }
   .hero-container {
-    height: 600px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding:0;
@@ -470,9 +470,42 @@ justify-content: center;
   .notifications-container{
     display:flex;
   }
+  .attraction-container{
+    display:grid;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-areas:
+    "title title title"
+    "floyen-img floyen-img attraction-info-floyen"
+    "attraction-info-ulriken ulriken-img ulriken-img"
+    "landasfjellet-img landasfjellet-img attraction-info-landasfjellet";
+  }
+  .hikes-heading{
+    grid-area: title;
+  }
 
-  
-  
+.floyen-img{
+  grid-area: floyen-img;
+}
+.ulriken-img{
+  grid-area: ulriken-img;
+}
+.landasfjellet-img{
+  grid-area: landasfjellet-img;
+}
+.attraction-info-floyen{
+  grid-area: attraction-info-floyen;
+}
+.attraction-info-ulriken{
+  grid-area: attraction-info-ulriken;
+}
+.attraction-info-landasfjellet{
+  grid-area: attraction-info-landasfjellet;
+}
+.attraction-image{
+  width: 740px;
+  height:480px;
+}
+
 }
 
 
