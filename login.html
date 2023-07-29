@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hikefinder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="./images/Polygon1.svg" class="polygon left-logo" />
+            <img src="./images/Polygon2.svg" class="polygon right-logo" />
+            <h1>HikeFinder</h1>
+          </div>
+
+          <div class="hamburger-icon-container">
+            <i
+              class="fa-solid fa-bars hamburger-icon"
+              id="mobile-hamburger-icon"
+            ></i>
+          </div>
+        </div>
+
+        <nav class="mobile-nav hidden" id="mobile-nav">
+          <div class="close-btn-wrapper">
+            <i class="fa-solid fa-x close-btn" id="close-btn"></i>
+          </div>
+          <ul class="hamburger-menu">
+            <a href="./index.html"><li class="nav-item">Home</li></a>
+            <a href="./explore.html"><li class="nav-item">Explore</li></a>
+            <a href="./signup.html"><li class="nav-item">Sign Up</li></a>
+            <a href="./login.html"><li class="nav-item active">Log In</li></a>
+          </ul>
+        </nav>
+        <nav class="nav-desktop hidden">
+          <ul class="nav-desktop-menu">
+            <a href="./index.html" class="nav-desktop-link"
+              ><li class="nav-desktop-item">Home</li></a
+            >
+            <a href="./explore.html" class="nav-desktop-link"
+              ><li class="nav-desktop-item">Explore</li></a
+            >
+            <a href="./signup.html" class="nav-desktop-link"
+              ><li class="nav-desktop-item button nav-green">Sign Up</li></a
+            >
+            <a href="./login.html" class="nav-desktop-link"
+              ><li class="nav-desktop-item button nav-white active">Log In</li></a
+            >
+          </ul>
+        </nav>
+      </header>
+      <section class="hero-container">
+       
+       
+        <form class="login-form">
+            <div class="form-container">
+                <h2 class="form-title"> Log in</h2>
+                <label for = "username"></label>
+                <input type="text" id="username" class="username" placeholder="Username" required/>
+                <label for = "password"></label>
+                <input type="text" id="password" class="password" placeholder="Password" required/>
+                <button type="submit"> Sign in</button>
+
+            </div>
+
+        </form>
+        
+      </section>
+      
+        
+    </div>
+      <footer>
+        <ul class="footer-nav-list">
+            <a href="./index.html"<li>Home</li></a>
+            <a href="./explore.html"<li>Explore</li></a>
+            <a href="./login.html"<li>Log In</li></a>
+            <a href="./signup.html"><li>Sign Up</li></a>
+          </ul>
+        <div class="footer-logo">
+          <div class="polygon-logo">
+          <img
+            src="../images/Polygon1-footer.svg"
+            class="polygon left-footer-logo"
+          />
+          <img
+            src="../images/Polygon2-footer.png"
+            class="polygon right-footer-logo"
+          />
+          <h2 class="footer-heading">HikeFinder</h2>
+        </div>
+        <div>
+        <p class="footer-subtitle">Copyright 2023 Hikefinder</p>
+      
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hikefinder-Explore</title>
+    <title>Hikefinder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/explore.css" />
   </head>
   <body>
     <div class="container">
@@ -42,24 +43,24 @@
             <i class="fa-solid fa-x close-btn" id="close-btn"></i>
           </div>
           <ul class="hamburger-menu">
-            <a href="#"><li class="nav-item ">Home</li></a>
-            <a href="#"><li class="nav-item active">Explore</li></a>
-            <a href="#"><li class="nav-item">Sign Up</li></a>
-            <a href="#"><li class="nav-item">Log In</li></a>
+            <a href="./index.html"><li class="nav-item ">Home</li></a>
+            <a href="./explore.html"><li class="nav-item active">Explore</li></a>
+            <a href="signup.html"><li class="nav-item">Sign Up</li></a>
+            <a href="./login.html"><li class="nav-item">Log In</li></a>
           </ul>
         </nav>
         <nav class="nav-desktop hidden">
           <ul class="nav-desktop-menu">
-            <a href="#" class="nav-desktop-link"
-              ><li class="nav-desktop-item active">Home</li></a
+            <a href="./index.html" class="nav-desktop-link"
+              ><li class="nav-desktop-item">Home</li></a
             >
-            <a href="#" class="nav-desktop-link"
-              ><li class="nav-desktop-item">Explore</li></a
+            <a href="./explore.html" class="nav-desktop-link"
+              ><li class="nav-desktop-item active">Explore</li></a
             >
-            <a href="#" class="nav-desktop-link"
+            <a href="./signup.html" class="nav-desktop-link"
               ><li class="nav-desktop-item button nav-green">Sign Up</li></a
             >
-            <a href="#" class="nav-desktop-link"
+            <a href="./login.html" class="nav-desktop-link"
               ><li class="nav-desktop-item button nav-white">Log In</li></a
             >
           </ul>
@@ -74,91 +75,101 @@
             maps and updates shared by hikers like you.
           </h3>
         </div>
-        
       </section>
+
       <main>
-        <section class="explore-container">
-          <h2 class="hikes-heading">Hikes near Bergen</h2>
 
-          <img src="../images/image4.jpg" class="attraction-image img-1" />
-          <div class="attraction-info info-1">
-            <h3 class="attraction-heading">Fløyen</h3>
-            <p class="attraction-length">Length: 10.2km - Est. 5h</p>
-            <p class="attraction-text">
-              Fløibanen is one of Norway's most visited attractions. At the top
-              of Fløyen you will find a large and varied hiking area,
-              spectacular views of the city.
-            </p>
-            <button class="learn-more-btn">LEARN MORE</button>
-          </div>
+        <h2 class="trail-heading heading">Explore Curated Trails Near You</h2>
+        <section class="main-container trails-container">
 
-          <img src="../images/ulriken-img.png" class="attraction-image img-2" />
-          <div class="attraction-info info-2">
-            <h3 class="attraction-heading">Ulriken</h3>
-            <p class="attraction-length">Length: 3.5 km - Est. 2 h 30 m</p>
-            <p class="attraction-text">
-              Ulriken is the highest of the Seven Mountains that surround the
-              city of Bergen, Norway. It has a height of 643 meters (2,110 ft)
-              above sea level.
-            </p>
-            <button class="learn-more-btn">LEARN MORE</button>
-          </div>
+            <!-- <h2 class="trail-heading heading">Explore Curated Trails Near You</h2> -->
+            <!-- <div class="trail-container">  -->
+                <div class="item-wrapper trail-wrapper tryon">
+                <img src="../images/explore-trail1.png" class="attraction-image trail-img tryon-img" />
+                <h3 class="trail-title tryon-title item-heading">Tryon Creek State Area</h3>
+                <div class="trail-rating-wrapper tryon-rating">
+                    <p>Moderate</p>
+                    <img src="./images/star-solid1.svg" class="star-img">
+                    <p>4.5</p>
+                    <p>(428)</p>
+                </div>
+                <p class="trail-text tryon-text item-text">
+                    670-acre forested area along a ravine with well-maintained trails for hikers, horses & leashed dogs.</p>
+                </div>
 
-          <img
-            src="../images/landasfjellet.png"
-            class="attraction-image img-3"
-          />
-          <div class="attraction-info info-3">
-            <h3 class="attraction-heading">Landåsfjellet</h3>
-            <p class="attraction-length">Length: 3.5 km - Est. 2 h 30 m</p>
-            <p class="attraction-text">
-              Landåsfjellet is a lower plateau south of Ulriken/Haugavarden
-              which offers numerous trails, and is almost a separate hiking
-              region by its own.
-            </p>
-            <button class="learn-more-btn">LEARN MORE</button>
-          </div>
-        </section>
-      </main>
-      <section class="notifications-container">
-        <div class="notification-wrapper">
-          <img src="../images/bell-solid1.svg" class="notification-image" />
-          <h2 class="notification-heading">Sign up for Notifications</h2>
-          <p class="notification-text">
-            <span class="green">Sign up</span> to get conditions alerts,
-            information on pop-up events and interesting stories.
-          </p>
-        </div>
+                
+                <div class="trail-wrapper marquam item-wrapper">
+                    <img src="../images/explore-trail2.png" class="attraction-image trail-img marquam-img" />
+                    <h3 class="trail-title marquam-title item-heading">Marquam Nature Park</h3>
+                    <div class="trail-rating-wrapper marquam-rating">
+                        <p>Moderate</p>
+                        <img src="./images/star-solid1.svg" class="star-img"/>
+                        <p>4.5</p>
+                        <p>(428)</p>
+                    </div>
+                    <p class="trail-text marquam-text item-text">
+                        193 acres of undeveloped land & over 5 miles of hiking trails with forested scenic views.</p>
+                    </div>
 
-        <div class="notification-wrapper">
-          <img
-            src="../images/location-dot-solid 2.svg"
-            class="notification-image"
-          />
-          <h2 class="notification-heading">Get the HikeFinder App</h2>
-          <p class="notification-text">
-            <span class="green">Download the app</span> to get the most out of
-            every minute outdoors with offline maps and more!
-          </p>
-        </div>
+            <div class="trail-wrapper wildwood">
+                <img src="../images/explore-trail1.png" class="attraction-image trail-img wildwood-img" />
+                <h3 class="trail-title wildwood-title item-heading">Wildwood Trail Area</h3>
+                <div class="trail-rating-wrapper wildwood-rating">
+                    <p>Easy</p>
+                    <img src="./images/star-solid1.svg" class="star-img"/>
+                    <p>4.5</p>
+                    <p>(428)</p>
+                </div>
+                <p class="trail-text wildwood-text">
+                    The Wildwood Trail starts at the Vietnam Memorial adjacent to the Oregon Zoo and World Forestry Center and circles uphill.</p>
+                </div>
+                <!-- </div> -->
+<img src="../images/google-map.png" class="map map-hidden"/>
 
-        <div class="notification-wrapper">
-          <img src="../images/share-solid 1.svg" class="notification-image" />
-          <h2 class="notification-heading">Share Trails</h2>
-          <p class="notification-text">
-            <span class="green">Share your hiking adventures</span> with the
-            community and keep a record of your travels.
-          </p>
-        </div>
-      </section>
 
+</section>
+</main>
+</div>
+
+<section class="notifications-container">
+    <div class="notification-wrapper">
+      <img src="../images/bell-solid1.svg" class="notification-image" />
+      <h2 class="notification-heading">Sign up for Notifications</h2>
+      <p class="notification-text">
+        <a href="./signup.html"><span class="green">Sign up</span></a> to get conditions alerts,
+        information on pop-up events and interesting stories.
+      </p>
+    </div>
+
+    <div class="notification-wrapper">
+      <img
+        src="../images/location-dot-solid 2.svg"
+        class="notification-image"
+      />
+      <h2 class="notification-heading">Get the HikeFinder App</h2>
+      <p class="notification-text">
+        <a href="#"<span class="green">Download the app</span></a> to get the most out of
+        every minute outdoors with offline maps and more!
+      </p>
+    </div>
+
+    <div class="notification-wrapper">
+      <img src="../images/share-solid 1.svg" class="notification-image" />
+      <h2 class="notification-heading">Share Trails</h2>
+      <p class="notification-text">
+        <a href="#"><span class="green">Share your hiking adventures</span></a> with the
+        community and keep a record of your travels.
+      </p>
+    </div>
+  </section>
+    </div>
       <footer>
         <ul class="footer-nav-list">
-          <li>Home</li>
-          <li>Explore</li>
-          <li>Log In</li>
-          <li>Sign Up</li>
-        </ul>
+            <a href="./index.html"<li>Home</li></a>
+            <a href="./explore.html"<li>Explore</li></a>
+            <a href="./login.html"<li>Log In</li></a>
+            <a href="./signup.html"><li>Sign Up</li></a>
+          </ul>
         <div class="footer-logo">
           <div class="polygon-logo">
           <img
@@ -169,12 +180,12 @@
             src="../images/Polygon2-footer.png"
             class="polygon right-footer-logo"
           />
-          <h2>HikeFinder</h2>
+          <h2 class="footer-heading">HikeFinder</h2>
         </div>
         <div>
         <p class="footer-subtitle">Copyright 2023 Hikefinder</p></div>
       </footer>
-    </div>
+   
     <script src="./script.js"></script>
   </body>
 </html>

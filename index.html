@@ -43,9 +43,9 @@
           </div>
           <ul class="hamburger-menu">
             <a href="#"><li class="nav-item active">Home</li></a>
-            <a href="#"><li class="nav-item">Explore</li></a>
-            <a href="#"><li class="nav-item">Sign Up</li></a>
-            <a href="#"><li class="nav-item">Log In</li></a>
+            <a href="./explore.html"><li class="nav-item">Explore</li></a>
+            <a href="./signup.html"><li class="nav-item">Sign Up</li></a>
+            <a href="./login.html"><li class="nav-item">Log In</li></a>
           </ul>
         </nav>
         <nav class="nav-desktop hidden">
@@ -53,13 +53,13 @@
             <a href="#" class="nav-desktop-link"
               ><li class="nav-desktop-item active">Home</li></a
             >
-            <a href="#" class="nav-desktop-link"
+            <a href="./explore.html" class="nav-desktop-link"
               ><li class="nav-desktop-item">Explore</li></a
             >
-            <a href="#" class="nav-desktop-link"
+            <a href="./signup.html" class="nav-desktop-link"
               ><li class="nav-desktop-item button nav-green">Sign Up</li></a
             >
-            <a href="#" class="nav-desktop-link"
+            <a href="./login.html" class="nav-desktop-link"
               ><li class="nav-desktop-item button nav-white">Log In</li></a
             >
           </ul>
@@ -85,14 +85,14 @@
         </div>
       </section>
       <main>
-        <section class="hike-container">
-          <h2 class="hikes-heading">Hikes near Bergen</h2>
+        <section class="hike-container main-container">
+          <h2 class="heading hikes-heading">Hikes Near Bergen</h2>
 
           <img src="../images/image4.jpg" class="attraction-image img-1" />
-          <div class="attraction-info info-1">
-            <h3 class="attraction-heading">Fløyen</h3>
-            <p class="attraction-length">Length: 10.2km - Est. 5h</p>
-            <p class="attraction-text">
+          <div class="attraction-info info-1 item-wrapper">
+            <h3 class="attraction-heading item-heading">Fløyen</h3>
+            <p class="attraction-length item-length">Length: 10.2km - Est. 5h</p>
+            <p class="attraction-text item-text">
               Fløibanen is one of Norway's most visited attractions. At the top
               of Fløyen you will find a large and varied hiking area,
               spectacular views of the city.
@@ -101,10 +101,10 @@
           </div>
 
           <img src="../images/ulriken-img.png" class="attraction-image img-2" />
-          <div class="attraction-info info-2">
-            <h3 class="attraction-heading">Ulriken</h3>
-            <p class="attraction-length">Length: 3.5 km - Est. 2 h 30 m</p>
-            <p class="attraction-text">
+          <div class="attraction-info info-2 item-wrapper">
+            <h3 class="attraction-heading item-heading">Ulriken</h3>
+            <p class="attraction-length item-length">Length: 3.5 km - Est. 2 h 30 m</p>
+            <p class="attraction-text item-text">
               Ulriken is the highest of the Seven Mountains that surround the
               city of Bergen, Norway. It has a height of 643 meters (2,110 ft)
               above sea level.
@@ -116,10 +116,10 @@
             src="../images/landasfjellet.png"
             class="attraction-image img-3"
           />
-          <div class="attraction-info info-3">
-            <h3 class="attraction-heading">Landåsfjellet</h3>
-            <p class="attraction-length">Length: 3.5 km - Est. 2 h 30 m</p>
-            <p class="attraction-text">
+          <div class="attraction-info info-3 item-wrapper">
+            <h3 class="attraction-heading item-heading">Landåsfjellet</h3>
+            <p class="attraction-length item-length">Length: 3.5 km - Est. 2 h 30 m</p>
+            <p class="attraction-text item-text">
               Landåsfjellet is a lower plateau south of Ulriken/Haugavarden
               which offers numerous trails, and is almost a separate hiking
               region by its own.
@@ -133,7 +133,7 @@
           <img src="../images/bell-solid1.svg" class="notification-image" />
           <h2 class="notification-heading">Sign up for Notifications</h2>
           <p class="notification-text">
-            <span class="green">Sign up</span> to get conditions alerts,
+            <a href="./signup.html"><span class="green">Sign up</span></a> to get conditions alerts,
             information on pop-up events and interesting stories.
           </p>
         </div>
@@ -145,7 +145,7 @@
           />
           <h2 class="notification-heading">Get the HikeFinder App</h2>
           <p class="notification-text">
-            <span class="green">Download the app</span> to get the most out of
+            <a href="#"<span class="green">Download the app</span></a> to get the most out of
             every minute outdoors with offline maps and more!
           </p>
         </div>
@@ -154,18 +154,18 @@
           <img src="../images/share-solid 1.svg" class="notification-image" />
           <h2 class="notification-heading">Share Trails</h2>
           <p class="notification-text">
-            <span class="green">Share your hiking adventures</span> with the
+            <a href="#"><span class="green">Share your hiking adventures</span></a> with the
             community and keep a record of your travels.
           </p>
         </div>
       </section>
-
+    </div>
       <footer>
         <ul class="footer-nav-list">
-          <li>Home</li>
-          <li>Explore</li>
-          <li>Log In</li>
-          <li>Sign Up</li>
+          <a href="./index.html"<li>Home</li></a>
+          <a href="./explore.html"<li>Explore</li></a>
+          <a href="./login.html"<li>Log In</li></a>
+          <a href="./signup.html"><li>Sign Up</li></a>
         </ul>
         <div class="footer-logo">
           <div class="polygon-logo">
@@ -177,10 +177,11 @@
             src="../images/Polygon2-footer.png"
             class="polygon right-footer-logo"
           />
-          <h2>HikeFinder</h2>
+          <h2 class="footer-heading">HikeFinder</h2>
         </div>
         <div>
-        <p class="footer-subtitle">Copyright 2023 Hikefinder</p></div>
+        <p class="footer-subtitle">Copyright 2023 Hikefinder</p>
+      
       </footer>
     </div>
     <script src="./script.js"></script>

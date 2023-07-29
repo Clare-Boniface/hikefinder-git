@@ -1,0 +1,122 @@
+.hero-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.login-form {
+  display: flex;
+  background-color: gray;
+  opacity: 0.9;
+  display: block;
+  margin: 0.5em auto;
+  padding: 0.5em 0.5em;
+  border: 5px solid green;
+  border-radius: 20px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 20px #0ff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  color: white;
+}
+.username,
+.password {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 20px;
+}
+input {
+  width: 100%;
+  margin-bottom: 4em;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+}
+button {
+  display: block;
+  margin: 0.5em auto;
+  background-color: green;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  border-radius: 20px;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+@media (min-width: 600px) {
+  .form-container,
+  .username,
+  .password,
+  button {
+    width: 80%;
+    margin: 1em auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}

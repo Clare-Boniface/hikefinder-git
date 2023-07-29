@@ -93,7 +93,7 @@ h1 {
   background: #fff;
 }
 .search-icon {
-  width: 20px;
+  width: 25px;
   height: 29.07px;
   border: none;
   display: flex;
@@ -119,19 +119,20 @@ h1 {
 }
 .search-input {
   border: none;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #c3c3c3;
   font-weight: 600;
   margin-left: 10px;
   display: inline-block;
   width: 50%;
+  height:100%;
 }
 
 main {
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
-.hikes-heading {
+.heading {
   color: #565656;
   font-family: Inter;
   font-style: normal;
@@ -139,7 +140,7 @@ main {
   line-height: normal;
   margin-top: 30px;
   margin-bottom: 22px;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 .attraction-wrapper {
   margin-bottom: 0;
@@ -149,33 +150,31 @@ main {
   display: block;
 }
 
-.attraction-heading {
-  color: #000;
-  font-family: Inter;
-  font-size: 1.7rem;
-  font-style: normal;
+.item-heading {
   font-weight: 600;
   line-height: normal;
   margin-top: 30px;
+  margin-bottom: 8px;
+font-size: 26px;
+line-height: normal;
 }
-.attraction-length {
+.attraction-length, .trail-rating-wrapper {
   color: #000;
   font-family: Inter;
-  font-size: 1.1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-top: 8px;
   margin-bottom: 21px;
+font-size: 17px;
 }
-.attraction-text {
+.item-text {
   color: #6f6f6f;
   font-family: Inter;
-  font-size: 0.9rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 33px */
-  margin-bottom: 1em;
+  margin-bottom: 35px;
 }
 .learn-more-btn {
   color: #fff;
@@ -220,6 +219,10 @@ font-style: normal;
 font-weight: 600;
 line-height: 150%; /* 33px */
 }
+a:hover, a:focus, button:hover, button:focus{
+  cursor: pointer;
+  opacity:0.7;
+}
 
 footer {
   background: #000;
@@ -232,11 +235,13 @@ footer {
   justify-content: center;
   margin-bottom: 2.5em;
 }
-.footer-nav-list li {
+.footer-nav-list a {
   list-style: none;
   text-transform: uppercase;
   font-size: 0.8rem;
   padding-right: 1em;
+  color: white;
+  text-decoration: none;
 }
 .footer-logo {
   display: flex;
@@ -259,6 +264,7 @@ margin-bottom: 0.8em;
   color: #a5a5a5;
   font-weight: 500;
 }
+
 .hidden {
   display: none;
 }
@@ -286,6 +292,7 @@ margin-bottom: 0.8em;
   width: 40%;
   border: 2px solid white;
   color: white;
+  z-index: 1;
 }
 
 .hamburger-menu {
@@ -320,6 +327,20 @@ margin-bottom: 0.8em;
   margin: 0.5em;
   margin-right: 1em;
 }
+.active{
+  text-decoration: underline;
+  color:orange;
+
+}
+
+
+@media (min-width: 700px) {
+
+
+
+}
+
+
 
 @media (min-width: 1300px) {
   main {
@@ -508,7 +529,7 @@ justify-content: center;
   .info-2{grid-area: info-2;}
   .info-3{grid-area: info-3;}
 
-  .hikes-heading{
+  .item-heading{
     color: #000;
     font-family: Inter;
     font-size: 46px;
@@ -548,9 +569,8 @@ line-height: 150%; /* 27px */
   }
   .attraction-image{
     width:100%;
-    height:100%;
   }
-  .attraction-heading{
+  .item-heading{
     color: #000;
 font-family: Inter;
 font-size: 46px;
@@ -562,25 +582,23 @@ margin-bottom: 8px;
 
 
   }
-  .attraction-length{
+  .attraction-length .trail-rating-wrapper{
     color: #000;
 font-family: Inter;
 font-size: 25px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-margin:0;
-margin-top:0;
-margin-bottom: 34px;
+
   }
-  .attraction-text{
+  .item-text{
     color: #6F6F6F;
 font-family: Inter;
 font-size: 22px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 33px */
-margin-top:0;
+line-height: 150%; 
+margin-top:34px;
 
  
 }
@@ -634,20 +652,29 @@ footer {
   align-items: center;
   padding:67px 31px;
 }
-.footer-nav-list li {
- display:flex;
- align-items: center;
+
+
+.footer-nav-list a {
   list-style: none;
   text-transform: uppercase;
   font-size: 0.8rem;
   padding-right: 1em;
-  color: #FFF;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top:1.3em;
+  color: white;
+  text-decoration: none;
+    display:flex;
+    align-items: center;
+     list-style: none;
+     text-transform: uppercase;
+     font-size: 0.8rem;
+     padding-right: 1em;
+     color: #FFF;
+   font-family: Inter;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   margin-top:1.3em;
+   }
 }
 .footer-logo {
   display: flex;
@@ -660,12 +687,23 @@ margin-top:1.3em;
   width: 34px;
   height: 27px;
 }
-.right-footer-logo, .footer-subtitle {
-  margin-left: -1.5em;
+.right-footer-logo {
+  margin-left: -1.5em; 
   
 }
 .polygon-logo{
-  margin-right:2em;
+  /* margin-right:2em; */
+  display:flex;
+  align-items:center;
+}
+
+.footer-heading{
+  color: #FFF;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 .footer-subtitle {
 font-family: Inter;
@@ -673,7 +711,9 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+margin-left:-2em;
 }
+
 
 
 
