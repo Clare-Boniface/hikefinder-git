@@ -25,8 +25,16 @@
       <header>
         <div class="navbar">
           <div class="logo-container">
-            <img src="./images/Polygon1.svg" class="polygon left-logo" />
-            <img src="./images/Polygon2.svg" class="polygon right-logo" />
+            <img
+              src="./images/Polygon1.svg"
+              class="left-logo"
+              alt="triangle logo"
+            />
+            <img
+              src="./images/Polygon2.svg"
+              class="right-logo"
+              alt="triangle logo"
+            />
             <h1>HikeFinder</h1>
           </div>
 
@@ -43,33 +51,42 @@
             <i class="fa-solid fa-x close-btn" id="close-btn"></i>
           </div>
           <ul class="hamburger-menu">
-            <a href="./index.html"><li class="nav-item ">Home</li></a>
-            <a href="./explore.html"><li class="nav-item active">Explore</li></a>
-            <a href="signup.html"><li class="nav-item">Sign Up</li></a>
-            <a href="./login.html"><li class="nav-item">Log In</li></a>
+            <li class="nav-item active">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./explore.html" class="nav-link">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a href="./signup.html" class="nav-link">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a href="./login.html" class="nav-link">Log In</a>
+            </li>
           </ul>
         </nav>
         <nav class="nav-desktop hidden">
           <ul class="nav-desktop-menu">
-            <a href="./index.html" class="nav-desktop-link"
-              ><li class="nav-desktop-item">Home</li></a
-            >
-            <a href="./explore.html" class="nav-desktop-link"
-              ><li class="nav-desktop-item active">Explore</li></a
-            >
-            <a href="./signup.html" class="nav-desktop-link"
-              ><li class="nav-desktop-item button nav-green">Sign Up</li></a
-            >
-            <a href="./login.html" class="nav-desktop-link"
-              ><li class="nav-desktop-item button nav-white">Log In</li></a
-            >
+            <li class="nav-desktop-item active">
+              <a href="./index.html" class="nav-desktop-link">Home</a>
+            </li>
+            <li class="nav-desktop-item">
+              <a href="./explore.html" class="nav-desktop-link">Explore</a>
+            </li>
+            <li class="nav-desktop-item nav-link-button nav-green">
+              <a href="./signup.html" class="nav-desktop-link">Sign Up</a>
+            </li>
+
+            <li class="nav-desktop-item nav-link-button nav-white">
+              <a href="./login.html" class="nav-desktop-link">Log In</a>
+            </li>
           </ul>
         </nav>
       </header>
       <section class="hero-container">
         <div class="left">
-          <h2 class="hero-white-heading">Find Your Next</h2>
-          <h2 class="hero-yellow-heading">Adventure</h2>
+          <h2 class="hero-heading white-heading">Find Your Next</h2>
+          <h2 class="hero-heading yellow-heading">Adventure</h2>
           <h3 class="hero-text">
             Your next hiking adventure awaits. Get on the trail with detailed
             maps and updates shared by hikers like you.
@@ -82,10 +99,16 @@
         <h2 class="trail-heading heading">Explore Curated Trails Near You</h2>
         <section class="main-container trails-container">
 
-            <!-- <h2 class="trail-heading heading">Explore Curated Trails Near You</h2> -->
-            <!-- <div class="trail-container">  -->
                 <div class="item-wrapper trail-wrapper tryon">
-                <img src="../images/explore-trail1.png" class="attraction-image trail-img tryon-img" />
+                  <a href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=103"
+                  target="_blank"
+                  class="trail-link"
+                >
+                <img
+                src="../images/tryon.png"
+                class="image attraction-image trail-img tryon-img"
+                alt="woodland scene with trees and path"
+              ></a>
                 <h3 class="trail-title tryon-title item-heading">Tryon Creek State Area</h3>
                 <div class="trail-rating-wrapper tryon-rating">
                     <p>Moderate</p>
@@ -99,7 +122,7 @@
 
                 
                 <div class="trail-wrapper marquam item-wrapper">
-                    <img src="../images/explore-trail2.png" class="attraction-image trail-img marquam-img" />
+                  <a href="https://www.portland.gov/parks/marquam-nature-park" target="_blank" class="trail-link"><img src="../images/explore-trail2.png" class="attraction-image trail-img marquam-img"></a>
                     <h3 class="trail-title marquam-title item-heading">Marquam Nature Park</h3>
                     <div class="trail-rating-wrapper marquam-rating">
                         <p>Moderate</p>
@@ -112,7 +135,7 @@
                     </div>
 
             <div class="trail-wrapper wildwood">
-                <img src="../images/explore-trail1.png" class="attraction-image trail-img wildwood-img" />
+              <a href="https://www.alltrails.com/trail/us/oregon/wildwood-trail--4?u=m" target="_blank" class="trail-link"><img src="../images/explore-trail1.png" class="attraction-image trail-img wildwood-img"></a>
                 <h3 class="trail-title wildwood-title item-heading">Wildwood Trail Area</h3>
                 <div class="trail-rating-wrapper wildwood-rating">
                     <p>Easy</p>
@@ -124,7 +147,12 @@
                     The Wildwood Trail starts at the Vietnam Memorial adjacent to the Oregon Zoo and World Forestry Center and circles uphill.</p>
                 </div>
                 <!-- </div> -->
-<img src="../images/google-map.png" class="map map-hidden"/>
+                <a href="https://www.google.co.uk/maps/place/Portland+International+Airport/@45.5716726,-122.6759681,12.25z/data=!4m6!3m5!1s0x5495a0aa74dc20d1:0x5bda7693380e5c3d!8m2!3d45.5882665!4d-122.5943981!16zL20vMDEzd2pt?entry=ttu"
+                target="_blank"
+                class="map-link map-hidden-link map map-hidden"
+              >
+    <img src="../images/google-map.png" class="map map-hidden map-link map-hidden-link"/></a>
+
 
 
 </section>
@@ -133,45 +161,65 @@
 
 <section class="notifications-container">
   <div class="notification-wrapper">
-    <img src="../images/bell-solid1.svg" class="notification-image" />
+    <img
+      src="../images/bell-solid1.svg"
+      class="notification-image"
+      alt="a bell icon"
+    />
     <h2 class="notification-heading">Sign up for Notifications</h2>
     <p class="notification-text">
-      <a href="./signup.html"><span class="green">Sign up</span></a> to get conditions alerts,
-      information on pop-up events and interesting stories.
+      <span class="green"
+        ><a href="./signup.html" target="_blank">Sign up </a></span
+      >to get conditions alerts, information on pop-up events and
+      interesting stories.
     </p>
   </div>
 
   <div class="notification-wrapper">
     <img
-      src="../images/location-dot-solid 2.svg"
+      src="../images/location-dot-solid2.svg"
       class="notification-image"
+      alt="a pinpointer location icon"
     />
     <h2 class="notification-heading">Get the HikeFinder App</h2>
     <p class="notification-text">
-      <a href="#"<span class="green">Download the app</span></a> to get the most out of
-      every minute outdoors with offline maps and more!
+      <span class="green"
+        ><a href="https://play.google.com/store" target="_blank"
+          >Download the app</a
+        ></span
+      >
+      to get the most out of every minute outdoors with offline maps and
+      more!
     </p>
   </div>
 
   <div class="notification-wrapper">
-    <img src="../images/share-solid 1.svg" class="notification-image" />
+    <img
+      src="../images/share-solid1.svg"
+      class="notification-image"
+      alt="arrow icon"
+    />
     <h2 class="notification-heading">Share Trails</h2>
     <p class="notification-text">
-      <a href="#"><span class="green">Share your hiking adventures</span></a> with the
-      community and keep a record of your travels.
+      <span class="green"
+        ><a href="https://twitter.com/home" target="_blank"
+          >Share your hiking adventures
+        </a></span
+      >with the community and keep a record of your travels.
     </p>
   </div>
 </section>
     </div>
-      <footer>
-        <ul class="footer-nav-list">
-            <a href="./index.html"<li>Home</li></a>
-            <a href="./explore.html"<li>Explore</li></a>
-            <a href="./login.html"<li>Log In</li></a>
-            <a href="./signup.html"><li>Sign Up</li></a>
-          </ul>
-        <div class="footer-logo">
-          <div class="polygon-logo">
+    <footer>
+      <ul class="footer-nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./explore.html">Explore</a></li>
+        <li><a href="./login.html">Log In</a></li>
+        <li><a href="./signup.html">Sign Up</a></li>
+      </ul>
+
+      <div class="footer-logo">
+        <div class="polygon-logo">
           <img
             src="../images/Polygon1-footer.svg"
             class="polygon left-footer-logo"
@@ -180,11 +228,15 @@
             src="../images/Polygon2-footer.png"
             class="polygon right-footer-logo"
           />
-          <h2 class="footer-heading">HikeFinder</h2>
         </div>
         <div>
-        <p class="footer-subtitle">Copyright 2023 Hikefinder</p></div>
-      </footer>
+          <h2 class="footer-heading">HikeFinder</h2>
+        </div>
+      </div>
+      <div>
+        <p class="footer-subtitle">Copyright 2023 Hikefinder</p>
+      </div>
+    </footer>
    
     <script src="./script.js"></script>
   </body>
