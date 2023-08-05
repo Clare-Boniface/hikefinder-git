@@ -12,7 +12,6 @@
   text-align: center;
   color: white;
 }
-
 .form-title {
   font-size: 2rem;
   margin-bottom: 0.5em;
@@ -20,7 +19,6 @@
 .form-subtitle {
   font-size: 1.6rem;
 }
-
 .form-subtitle a {
   color: orange;
 }
@@ -45,6 +43,6 @@ input {
     margin-top: 3em;
   }
   .sign-up-form {
-    margin-bottom: 3em;
+    margin-bottom: 6em;
   }
 }

@@ -3,14 +3,12 @@
   margin: 0;
   padding: 0;
 }
-
 h1,
 h2,
 h3 {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Inter", sans-serif;
 }
@@ -20,8 +18,6 @@ body {
   margin: 0 auto;
 }
 main {
-  /* margin-left: 1.5em;
-  margin-right: 1.5em; */
   margin: 0 1.5em;
 }
 /* ----------------Header ------------------- */
@@ -30,14 +26,11 @@ header {
 }
 .right-logo {
   margin-left: -1.5em;
-  /* z-index: 1; */
 }
-
 .logo-container {
   display: flex;
   align-items: center;
 }
-
 h1 {
   font-size: 1.5rem;
   color: #262626;
@@ -146,7 +139,6 @@ h1 {
   width: 50%;
   height: 100%;
 }
-
 .heading {
   color: #565656;
   font-size: 1.5rem;
@@ -156,7 +148,6 @@ h1 {
   width: 100%;
   display: block;
 }
-
 .item-heading {
   font-weight: 600;
   margin: 1.15em 0 0.3em 0;
@@ -170,16 +161,15 @@ h1 {
 }
 .item-text {
   color: #6f6f6f;
-  margin-bottom: 2.2em;
   color: #6f6f6f;
   line-height: 150%;
-  margin: 1.3em 0 2.2em 0;
+  margin: 1.3em 0 2em 0;
   font-size: 1rem;
 }
 .learn-more {
   color: #fff;
   font-family: Inter;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 600;
   line-height: 150%;
   border-radius: 4px;
@@ -194,7 +184,7 @@ h1 {
 .notifications-container {
   text-align: center;
   background: #fafafa;
-  padding: 0.6em 0 3.1em 0;
+  padding: 0.6em 4em 3.1em 4em;
   min-width: 300px;
 }
 .notification-image {
@@ -216,7 +206,6 @@ h1 {
   line-height: 150%;
 }
 /* ----------------Footer ------------------- */
-
 footer {
   background: #000;
   display: flex;
@@ -239,7 +228,7 @@ footer {
 .footer-nav-list {
   display: flex;
   justify-content: center;
-  margin: 1em 2em 1em 2em;
+  margin: 1em 1.5em 1em 1.5em;
 }
 footer li {
   color: white;
@@ -283,7 +272,6 @@ footer li {
 .logo-information {
   display: flex;
 }
-
 /* ----------------Hover States and Utility Classes ------------------- */
 .hidden {
   display: none;
@@ -295,7 +283,6 @@ a,
 button {
   cursor: pointer;
 }
-
 .nav-desktop-link:visited {
   color: black;
 }
@@ -309,15 +296,6 @@ button {
 .notification-text a:visited {
   color: #62895b;
 }
-/* a:hover,
-a:focus,
-.nav-desktop-item:hover,
-.nav-desktop-item:focus {
-  opacity: 0.9;
-  color: orange;
-  font-weight: bold;
-  /* text-decoration: underline; */
-
 a:hover,
 a:focus,
 .nav-desktop-link:hover,
@@ -325,15 +303,7 @@ a:focus,
   opacity: 0.9;
   color: orange;
   font-weight: bold;
-  /* text-decoration: underline; */
 }
-/* 
-.nav-item:hover,
-.nav-item:focus {
-  background-color: gray;
-  color: black;
-} */
-
 .notification-text a:hover,
 .notification-text a:focus {
   color: orange;
@@ -353,11 +323,17 @@ button:focus,
 }
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
   /* ----------------Hikes Section ------------------- */
   .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3em;
+  }
+  .heading {
+    font-size: 1.8rem;
   }
   .item-heading {
     font-size: 1.6rem;
@@ -389,11 +365,13 @@ button:focus,
   /* ----------------Footer ------------------- */
   .footer-nav-list a {
     font-size: 1.1rem;
-    padding: 1em;
   }
 }
 
 @media (min-width: 1200px) {
+  main {
+    margin: 0 3em;
+  }
   header {
     display: flex;
     justify-content: space-between;
@@ -447,9 +425,7 @@ button:focus,
   .nav-white {
     border: 2px solid #000;
   }
-
   /* ----------------Hero------------------- */
-
   .hero-container {
     height: 600px;
     display: grid;
@@ -457,7 +433,6 @@ button:focus,
     padding: 0;
     margin: 0;
   }
-
   .hero-heading,
   .hero-heading {
     font-size: 4.25rem;
@@ -468,7 +443,6 @@ button:focus,
     font-weight: 500;
     margin-left: 1.9em;
   }
-
   .left {
     opacity: 0.8;
     background: #232323;
@@ -491,7 +465,6 @@ button:focus,
     margin-left: 0.3em;
   }
   /* ----------------Hikes Section ------------------- */
-
   .hike-container {
     display: grid;
     grid-template-columns: 1fr 60px 1fr;
@@ -504,6 +477,8 @@ button:focus,
   }
   .hikes-heading {
     grid-area: title;
+    font-size: 2.75rem;
+    margin-bottom: 0;
   }
   .floyen-img {
     grid-area: img-1;
@@ -530,8 +505,8 @@ button:focus,
     margin-bottom: 8px;
   }
   .attraction-info {
-    padding-left: 40px;
-    padding-right: 60px;
+    padding-left: 3em;
+    padding-right: 3em;
   }
   .learn-more-btn {
     font-size: 1.1rem;
@@ -544,7 +519,6 @@ button:focus,
   .item-text {
     font-size: 1.4rem;
   }
-
   /* ----------------Notifications ------------------- */
   .notifications-container {
     margin-top: 3.1em;
@@ -579,12 +553,11 @@ button:focus,
     align-items: center;
     padding: 4.1em 0.5em 4.1em 1.9em;
   }
-
   .logo-information {
     display: flex;
     align-items: flex-start;
+    margin-left: 2em;
   }
-
   .logo-images {
     display: flex;
     align-items: center;
@@ -592,13 +565,11 @@ button:focus,
   .logo-content {
     margin-left: 1em;
   }
-
   .footer-links {
     display: flex;
     align-items: center;
     order: 1;
   }
-
   .footer-nav-list {
     list-style: none;
     padding: 0;
@@ -606,20 +577,16 @@ button:focus,
     display: flex;
     justify-content: flex-end;
   }
-
   .footer-nav-list li {
     margin-right: 1.5em;
   }
-
   .footer-nav-list a {
     font-size: 1.25rem;
     font-weight: 500;
   }
-
   .right-footer-logo {
     margin-left: -1.3em;
   }
-
   .polygon-logo {
     display: flex;
     align-items: center;
@@ -627,7 +594,6 @@ button:focus,
   .logo-images {
     margin-top: 1em;
   }
-
   .footer-subtitle {
     margin-top: 0.5em;
     font-size: 1rem;

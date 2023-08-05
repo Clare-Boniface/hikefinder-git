@@ -1,18 +1,12 @@
-.map-hidden {
-  display: none;
-}
 .trail-rating-wrapper {
   display: flex;
   align-items: center;
   gap: 0.6em;
 }
-
 .star-img {
   width: 25px;
 }
-map-hidden-img,
-.map-hidden-link,
-.map-hidden-img img a {
+.map-hidden-link {
   display: none;
   display: flex;
   width: 10%;
@@ -28,9 +22,6 @@ map-hidden-img,
   text-decoration: none;
   color: black;
   display: inline-block;
-}
-.star-img {
-  width: 25px;
 }
 
 @media (min-width: 768px) {
@@ -49,197 +40,9 @@ map-hidden-img,
   .item-heading {
     font-size: 1.2rem;
   }
-  .trail-title {
-    margin-top: 0em;
-  }
-
-  .notifications-container {
-    display: flex;
-  }
 }
 
 @media (min-width: 1200px) {
-  .map-hidden {
-    display: grid;
-  }
-  .trail-text {
-    color: #6f6f6f;
-    font-family: Inter;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 39px */
-    letter-spacing: -0.52px;
-  }
-  .trail-title {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  .tryon {
-    display: grid;
-    grid-template-areas:
-      "heading img"
-      "rating img"
-      "text text";
-  }
-
-  .tryon-title {
-    grid-area: heading;
-    color: #000;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 0;
-  }
-  .tryon-rating {
-    grid-area: rating;
-  }
-  .tryon-img {
-    grid-area: img;
-  }
-  .tryon-text,
-  .marquam-text {
-    grid-area: text;
-    border-bottom: 1px solid #a8a8a8;
-    padding-bottom: 45px;
-  }
-
-  .marquam {
-    display: grid;
-    grid-template-areas:
-      "heading img"
-      "rating img"
-      "text text";
-  }
-  .trail-heading {
-    grid-area: heading;
-  }
-
-  .marquam-title {
-    grid-area: heading;
-    color: #000;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .marquam-rating {
-    grid-area: rating;
-  }
-  .marquam-img {
-    grid-area: img;
-  }
-  .marquam-text {
-    grid-area: text;
-    border-bottom: 1px solid #a8a8a8;
-  }
-  .wildwood {
-    display: grid;
-    grid-template-areas:
-      "heading img"
-      "rating img"
-      "text text";
-  }
-
-  .wildwood-title {
-    grid-area: heading;
-    color: #000;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .wildwood-rating {
-    grid-area: rating;
-  }
-  .wildwood-img {
-    grid-area: img;
-  }
-  .wildwood-text {
-    grid-area: text;
-    padding-bottom: 81px;
-  }
-  .trails-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas:
-      /* "heading heading" */
-      "tryon map"
-      "marquam map"
-      "wildwood map";
-    gap: 2em;
-  }
-  .trail-heading {
-    grid-area: heading;
-    margin-top: 65px;
-    margin-bottom: 77px;
-    color: #565656;
-    font-family: Inter;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .map {
-    grid-area: map;
-    display: flex;
-    align-self: flex-start;
-    width: 100%;
-  }
-  .trail-img {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    max-width: 479px;
-    border-radius: 4px;
-    width: 144px;
-    height: 111px;
-    align-self: end;
-    justify-self: end;
-  }
-  .trail-rating-wrapper {
-    display: flex;
-    align-items: center;
-    color: #000;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    gap: 0.5em;
-  }
-
-  .star-img {
-    width: 37px;
-  }
-  .trail-wrapper {
-    margin-top: 0;
-  }
-  .map-hidden-img,
-  .map-hidden-link,
-  .map-hidden,
-  .map-link {
-    display: grid;
-    grid-area: map;
-    display: flex;
-    align-self: flex-start;
-    width: 100%;
-  }
-  .trail-text {
-    letter-spacing: -0.52px;
-    color: #6f6f6f;
-    font-family: Inter;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: -0.52px;
-  }
   .tryon,
   .marquam,
   .wildwood {
@@ -257,10 +60,6 @@ map-hidden-img,
     margin-bottom: 0;
     font-size: 1.6rem;
   }
-  .trail-title {
-    margin-top: 0;
-    padding-top: 0;
-  }
   .tryon-rating,
   .marquam-rating,
   .wildwood-rating {
@@ -275,11 +74,11 @@ map-hidden-img,
   .marquam-text {
     grid-area: text;
     border-bottom: 1px solid #a8a8a8;
-    padding-bottom: 45px;
+    padding-bottom: 2.8em;
   }
+
   .wildwood-text {
     grid-area: text;
-    padding-bottom: 81px;
   }
   .trails-container {
     display: grid;
@@ -290,48 +89,38 @@ map-hidden-img,
       "wildwood map";
     gap: 2em;
   }
+
   .trail-heading {
-    text-decoration: none;
-    font-size: 2rem;
     grid-area: heading;
     margin-top: 65px;
     margin-bottom: 77px;
     color: #565656;
-    font-family: Inter;
-    font-size: 44px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    text-decoration: none;
+    font-size: 2rem;
   }
-  .map-img {
-    width: 100%;
+  .map {
     grid-area: map;
     display: block;
-    align-self: flex-start;
     width: 100%;
   }
   .trail-img {
-    max-width: 300px;
+    max-width: 479px;
     border-radius: 4px;
     margin-left: auto;
-    display: grid;
-    align-self: end;
-    justify-self: end;
-    grid-area: image;
-    display: block;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     width: 210px;
     height: 150px;
   }
   .trail-rating-wrapper {
     display: flex;
     align-items: center;
+    color: #000;
     font-size: 1.3rem;
     font-weight: 400;
-    margin-top: -6em;
+    margin-top: -8em;
     gap: 0.6em;
   }
   .star-img {
-    width: 20px;
+    width: 30px;
   }
 }
