@@ -26,8 +26,16 @@
       <header>
         <div class="navbar">
           <div class="logo-container">
-            <img src="./images/Polygon1.svg" class="polygon left-logo" />
-            <img src="./images/Polygon2.svg" class="polygon right-logo" />
+            <img
+              src="./images/Polygon1.svg"
+              class="left-logo"
+              alt="triangle logo"
+            />
+            <img
+              src="./images/Polygon2.svg"
+              class="right-logo"
+              alt="triangle logo"
+            />
             <h1>HikeFinder</h1>
           </div>
 
@@ -44,51 +52,70 @@
             <i class="fa-solid fa-x close-btn" id="close-btn"></i>
           </div>
           <ul class="hamburger-menu">
-            <a href="./index.html"><li class="nav-item">Home</li></a>
-            <a href="./explore.html"><li class="nav-item">Explore</li></a>
-            <a href="./signup.html"><li class="nav-item active">Sign Up</li></a>
-            <a href="./login.html"><li class="nav-item">Log In</li></a>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./explore.html" class="nav-link">Explore</a>
+            </li>
+            <li class="nav-item active">
+              <a href="./signup.html" class="nav-link">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a href="./login.html" class="nav-link">Log In</a>
+            </li>
           </ul>
         </nav>
         <nav class="nav-desktop hidden">
           <ul class="nav-desktop-menu">
-            <a href="./index.html" class="nav-desktop-link"
-              ><li class="nav-desktop-item">Home</li></a
-            >
-            <a href="./explore.html" class="nav-desktop-link"
-              ><li class="nav-desktop-item">Explore</li></a
-            >
-            <a href="./signup.html" class="nav-desktop-link"
-              ><li class="nav-desktop-item button nav-green active">Sign Up</li></a
-            >
-            <a href="./login.html" class="nav-desktop-link"
-              ><li class="nav-desktop-item button nav-white">Log In</li></a
-            >
+            <li class="nav-desktop-item active">
+              <a href="./index.html" class="nav-desktop-link">Home</a>
+            </li>
+            <li class="nav-desktop-item">
+              <a href="./explore.html" class="nav-desktop-link">Explore</a>
+            </li>
+            <li class="nav-desktop-item nav-link-button nav-green active">
+              <a href="./signup.html" class="nav-desktop-link nav-green-link"
+                >Sign Up</a
+              >
+            </li>
+
+            <li class="nav-desktop-item nav-link-button nav-white">
+              <a href="./login.html" class="nav-desktop-link nav-white-link"
+                >Log In</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
-      <section class="hero-container">
-       
+      <section class="hero-container signup-container">
         <h2 class="form-title">Sign Up</h2>
-        <p class="form-subtitle">Already a member? <a href="./login.html">Log in </a></p>
+        <p class="form-subtitle">
+          Already a member? <a href="./login.html">Log in </a>
+        </p>
 
-        
         <form class="sign-up-form">
-            
-            <div class="form-container">
-<label for = "email"></label>
-<input type="text" id="email" class="username" placeholder="Email" required/>
-<label for = "password"></label>
-<input type="text" id="password" class="password" placeholder="Password required"/>
-<button type="submit"> Sign Up</button>
+          <div class="form-container">
+            <input
+              type="text"
+              id="email"
+              class="username"
+              placeholder="Email"
+              required
+              aria-label="Enter your email"
+            />
 
-</div>
-
+            <input
+              type="text"
+              id="password"
+              class="password"
+              placeholder="Password required"
+              aria-label="Enter your password"
+            />
+            <button type="submit">Sign Up</button>
+          </div>
         </form>
-        
       </section>
-      
-        
     </div>
     <footer>
       <div class="logo-information">
@@ -96,10 +123,12 @@
           <img
             src="../images/Polygon1-footer.svg"
             class="polygon left-footer-logo"
+            alt="a triangle icon"
           />
           <img
             src="../images/Polygon2-footer.png"
             class="polygon right-footer-logo"
+            alt="a triangle icon"
           />
         </div>
         <div class="logo-content">
@@ -118,7 +147,6 @@
         </ul>
       </div>
     </footer>
-    </div>
     <script src="./script.js"></script>
   </body>
 </html>

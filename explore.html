@@ -51,10 +51,10 @@
             <i class="fa-solid fa-x close-btn" id="close-btn"></i>
           </div>
           <ul class="hamburger-menu">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="./index.html" class="nav-link">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="./explore.html" class="nav-link">Explore</a>
             </li>
             <li class="nav-item">
@@ -67,18 +67,22 @@
         </nav>
         <nav class="nav-desktop hidden">
           <ul class="nav-desktop-menu">
-            <li class="nav-desktop-item active">
+            <li class="nav-desktop-item">
               <a href="./index.html" class="nav-desktop-link">Home</a>
             </li>
-            <li class="nav-desktop-item">
+            <li class="nav-desktop-item active">
               <a href="./explore.html" class="nav-desktop-link">Explore</a>
             </li>
             <li class="nav-desktop-item nav-link-button nav-green">
-              <a href="./signup.html" class="nav-desktop-link">Sign Up</a>
+              <a href="./signup.html" class="nav-desktop-link nav-green-link"
+                >Sign Up</a
+              >
             </li>
 
             <li class="nav-desktop-item nav-link-button nav-white">
-              <a href="./login.html" class="nav-desktop-link">Log In</a>
+              <a href="./login.html" class="nav-desktop-link nav-white-link"
+                >Log In</a
+              >
             </li>
           </ul>
         </nav>
@@ -95,121 +99,155 @@
       </section>
 
       <main>
-
         <h2 class="trail-heading heading">Explore Curated Trails Near You</h2>
         <section class="main-container trails-container">
-
-                <div class="item-wrapper trail-wrapper tryon">
-                  <a href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=103"
-                  target="_blank"
-                  class="trail-link"
-                >
-                <img
+          <div class="item-wrapper trail-wrapper tryon">
+            <a
+              href="https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=103"
+              target="_blank"
+              class="trail-link"
+            >
+              <img
                 src="../images/tryon.png"
                 class="image attraction-image trail-img tryon-img"
                 alt="woodland scene with trees and path"
-              ></a>
-                <h3 class="trail-title tryon-title item-heading">Tryon Creek State Area</h3>
-                <div class="trail-rating-wrapper tryon-rating">
-                    <p>Moderate</p>
-                    <img src="./images/star-solid1.svg" class="star-img">
-                    <p>4.5</p>
-                    <p>(428)</p>
-                </div>
-                <p class="trail-text tryon-text item-text">
-                    670-acre forested area along a ravine with well-maintained trails for hikers, horses & leashed dogs.</p>
-                </div>
+            /></a>
+            <h3 class="trail-title tryon-title item-heading">
+              Tryon Creek State Area
+            </h3>
+            <div class="trail-rating-wrapper tryon-rating">
+              <p>Moderate</p>
+              <img src="./images/star-solid1.svg" class="star-img" />
+              <p>4.5</p>
+              <p>(428)</p>
+            </div>
+            <p class="trail-text tryon-text item-text">
+              670-acre forested area along a ravine with well-maintained trails
+              for hikers, horses & leashed dogs.
+            </p>
+          </div>
 
-                
-                <div class="trail-wrapper marquam item-wrapper">
-                  <a href="https://www.portland.gov/parks/marquam-nature-park" target="_blank" class="trail-link"><img src="../images/explore-trail2.png" class="attraction-image trail-img marquam-img"></a>
-                    <h3 class="trail-title marquam-title item-heading">Marquam Nature Park</h3>
-                    <div class="trail-rating-wrapper marquam-rating">
-                        <p>Moderate</p>
-                        <img src="./images/star-solid1.svg" class="star-img"/>
-                        <p>4.5</p>
-                        <p>(428)</p>
-                    </div>
-                    <p class="trail-text marquam-text item-text">
-                        193 acres of undeveloped land & over 5 miles of hiking trails with forested scenic views.</p>
-                    </div>
+          <div class="trail-wrapper marquam item-wrapper">
+            <a
+              href="https://www.portland.gov/parks/marquam-nature-park"
+              target="_blank"
+              class="trail-link"
+              ><img
+                src="../images/explore-trail2.png"
+                class="attraction-image trail-img marquam-img"
+            /></a>
+            <h3 class="trail-title marquam-title item-heading">
+              Marquam Nature Park
+            </h3>
+            <div class="trail-rating-wrapper marquam-rating">
+              <p>Moderate</p>
+              <img
+                src="./images/star-solid1.svg"
+                class="star-img"
+                alt="gren-star-icon"
+              />
+              <p>4.5</p>
+              <p>(428)</p>
+            </div>
+            <p class="trail-text marquam-text item-text">
+              193 acres of undeveloped land & over 5 miles of hiking trails with
+              forested scenic views.
+            </p>
+          </div>
 
-            <div class="trail-wrapper wildwood">
-              <a href="https://www.alltrails.com/trail/us/oregon/wildwood-trail--4?u=m" target="_blank" class="trail-link"><img src="../images/explore-trail1.png" class="attraction-image trail-img wildwood-img"></a>
-                <h3 class="trail-title wildwood-title item-heading">Wildwood Trail Area</h3>
-                <div class="trail-rating-wrapper wildwood-rating">
-                    <p>Easy</p>
-                    <img src="./images/star-solid1.svg" class="star-img"/>
-                    <p>4.5</p>
-                    <p>(428)</p>
-                </div>
-                <p class="trail-text wildwood-text item-text">
-                    The Wildwood Trail starts at the Vietnam Memorial adjacent to the Oregon Zoo and World Forestry Center and circles uphill.</p>
-                </div>
-                <!-- </div> -->
-                <a href="https://www.google.co.uk/maps/place/Portland+International+Airport/@45.5716726,-122.6759681,12.25z/data=!4m6!3m5!1s0x5495a0aa74dc20d1:0x5bda7693380e5c3d!8m2!3d45.5882665!4d-122.5943981!16zL20vMDEzd2pt?entry=ttu"
-                target="_blank"
-                class="map-link map-hidden-link map map-hidden"
-              >
-    <img src="../images/google-map.png" class="map map-hidden map-link map-hidden-link"/></a>
-
-
-
-</section>
-</main>
-</div>
-
-<section class="notifications-container">
-  <div class="notification-wrapper">
-    <img
-      src="../images/bell-solid1.svg"
-      class="notification-image"
-      alt="a bell icon"
-    />
-    <h2 class="notification-heading">Sign up for Notifications</h2>
-    <p class="notification-text">
-      <span class="green"
-        ><a href="./signup.html" target="_blank">Sign up </a></span
-      >to get conditions alerts, information on pop-up events and
-      interesting stories.
-    </p>
-  </div>
-
-  <div class="notification-wrapper">
-    <img
-      src="../images/location-dot-solid2.svg"
-      class="notification-image"
-      alt="a pinpointer location icon"
-    />
-    <h2 class="notification-heading">Get the HikeFinder App</h2>
-    <p class="notification-text">
-      <span class="green"
-        ><a href="https://play.google.com/store" target="_blank"
-          >Download the app</a
-        ></span
-      >
-      to get the most out of every minute outdoors with offline maps and
-      more!
-    </p>
-  </div>
-
-  <div class="notification-wrapper">
-    <img
-      src="../images/share-solid1.svg"
-      class="notification-image"
-      alt="arrow icon"
-    />
-    <h2 class="notification-heading">Share Trails</h2>
-    <p class="notification-text">
-      <span class="green"
-        ><a href="https://twitter.com/home" target="_blank"
-          >Share your hiking adventures
-        </a></span
-      >with the community and keep a record of your travels.
-    </p>
-  </div>
-</section>
+          <div class="trail-wrapper wildwood">
+            <a
+              href="https://www.alltrails.com/trail/us/oregon/wildwood-trail--4?u=m"
+              target="_blank"
+              class="trail-link"
+              ><img
+                src="../images/explore-trail1.png"
+                class="attraction-image trail-img wildwood-img"
+            /></a>
+            <h3 class="trail-title wildwood-title item-heading">
+              Wildwood Trail Area
+            </h3>
+            <div class="trail-rating-wrapper wildwood-rating">
+              <p>Easy</p>
+              <img
+                src="./images/star-solid1.svg"
+                class="star-img"
+                alt="gren-star-icon"
+              />
+              <p>4.5</p>
+              <p>(428)</p>
+            </div>
+            <p class="trail-text wildwood-text item-text">
+              The Wildwood Trail starts at the Vietnam Memorial adjacent to the
+              Oregon Zoo and World Forestry Center and circles uphill.
+            </p>
+          </div>
+          <!-- </div> -->
+          <a
+            href="https://www.google.co.uk/maps/place/Portland+International+Airport/@45.5716726,-122.6759681,12.25z/data=!4m6!3m5!1s0x5495a0aa74dc20d1:0x5bda7693380e5c3d!8m2!3d45.5882665!4d-122.5943981!16zL20vMDEzd2pt?entry=ttu"
+            target="_blank"
+            class="map-link map-hidden-link map map-hidden"
+          >
+            <img
+              src="../images/google-map.png"
+              class="map map-hidden map-link map-hidden-link"
+              alt="a google map showing Vancouver"
+          /></a>
+        </section>
+      </main>
     </div>
+
+    <section class="notifications-container">
+      <div class="notification-wrapper">
+        <img
+          src="../images/bell-solid1.svg"
+          class="notification-image"
+          alt="a bell icon"
+        />
+        <h2 class="notification-heading">Sign up for Notifications</h2>
+        <p class="notification-text">
+          <span class="green"
+            ><a href="./signup.html" target="_blank">Sign up </a></span
+          >to get conditions alerts, information on pop-up events and
+          interesting stories.
+        </p>
+      </div>
+
+      <div class="notification-wrapper">
+        <img
+          src="../images/location-dot-solid2.svg"
+          class="notification-image"
+          alt="a pinpointer location icon"
+        />
+        <h2 class="notification-heading">Get the HikeFinder App</h2>
+        <p class="notification-text">
+          <span class="green"
+            ><a href="https://play.google.com/store" target="_blank"
+              >Download the app</a
+            ></span
+          >
+          to get the most out of every minute outdoors with offline maps and
+          more!
+        </p>
+      </div>
+
+      <div class="notification-wrapper">
+        <img
+          src="../images/share-solid1.svg"
+          class="notification-image"
+          alt="arrow icon"
+        />
+        <h2 class="notification-heading">Share Trails</h2>
+        <p class="notification-text">
+          <span class="green"
+            ><a href="https://twitter.com/home" target="_blank"
+              >Share your hiking adventures
+            </a></span
+          >with the community and keep a record of your travels.
+        </p>
+      </div>
+    </section>
+
     <footer>
       <div class="logo-information">
         <div class="logo-images">
