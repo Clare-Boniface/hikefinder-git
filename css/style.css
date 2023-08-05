@@ -58,7 +58,7 @@ h1 {
 .nav-item {
   list-style: none;
   margin: 0 auto 1em auto;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 2em;
   background-color: green;
   width: 80%;
 }
@@ -130,13 +130,16 @@ h1 {
 }
 .search-input {
   border: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #c3c3c3;
   font-weight: 600;
   margin-left: 0.5em;
   display: inline-block;
   width: 50%;
   height: 100%;
+  padding: 1em 0;
+  outline: none;
+  color: black;
 }
 .heading {
   color: #565656;
@@ -324,12 +327,14 @@ button:focus,
 .nav-item:hover,
 .nav-item:focus {
   color: black;
+  font-weight: bold;
   background-color: #ff8c00;
 }
-a:hover,
-a:focus,
+
 .nav-desktop-link:hover,
-.nav-desktop-link:focus {
+.nav-desktop-link:focus,
+.footer-nav-list a:focus,
+.footer-nav-list a:hover {
   opacity: 0.9;
   color: #ff8c00;
   font-weight: bold;
@@ -372,11 +377,13 @@ a:focus,
   .search-btn {
     font-size: 1rem;
     margin: 0.1em 0.1em 0.1em auto;
-    padding: 0.5em 0.4em 0.5em 0.6em;
   }
   .search-input {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-left: 0.3em;
+  }
+  .mobile-nav {
+    top: 114px;
   }
   /* ----------------Hikes Section ------------------- */
   .main-container {
