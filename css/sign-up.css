@@ -20,7 +20,7 @@
   font-size: 1.6rem;
 }
 .form-subtitle a {
-  color: orange;
+  color: #ff8c00;
 }
 .username,
 .password {
@@ -32,7 +32,6 @@ input {
   border: none;
   text-align: center;
 }
-
 @media (min-width: 1200px) {
   .hero-container {
     display: flex;

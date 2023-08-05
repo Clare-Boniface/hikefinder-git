@@ -58,7 +58,6 @@ h1 {
 .nav-item {
   list-style: none;
   margin: 0 auto 1em auto;
-  border: 2px solid white;
   padding: 1em 2em 1em 2em;
   background-color: green;
   width: 80%;
@@ -131,7 +130,7 @@ h1 {
 }
 .search-input {
   border: none;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #c3c3c3;
   font-weight: 600;
   margin-left: 0.5em;
@@ -278,6 +277,7 @@ footer li {
 }
 .active {
   font-style: italic;
+  color: white;
 }
 a,
 button {
@@ -296,24 +296,17 @@ button {
 .notification-text a:visited {
   color: #62895b;
 }
-a:hover,
-a:focus,
-.nav-desktop-link:hover,
-.nav-desktop-link:focus {
-  opacity: 0.9;
-  color: orange;
-  font-weight: bold;
-}
+
 .notification-text a:hover,
 .notification-text a:focus {
-  color: orange;
+  color: #ff8c00;
   font-weight: bold;
 }
 button:hover,
 button:focus,
 .learn-more:hover,
 .learn-more:focus {
-  background-color: orange;
+  background-color: #ff8c00;
   color: green;
   opacity: 0.9;
   color: black;
@@ -321,10 +314,69 @@ button:focus,
   border: 2px solid black;
   text-decoration: none;
 }
+.nav-item:hover,
+.nav-item:focus {
+  cursor: pointer;
+  background-color: #ff8c00;
+}
+.mobile-menu a:hover,
+.mobile-menu a:focus,
+.nav-item:hover,
+.nav-item:focus {
+  color: black;
+  background-color: #ff8c00;
+}
+a:hover,
+a:focus,
+.nav-desktop-link:hover,
+.nav-desktop-link:focus {
+  opacity: 0.9;
+  color: #ff8c00;
+  font-weight: bold;
+}
 
 @media (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
+  }
+  .hero-container {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-heading {
+    font-size: 3rem;
+    margin: 0 0.6em;
+  }
+  .hero-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 1em;
+  }
+  .left {
+    opacity: 0.8;
+    background: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .search-container {
+    border-radius: 6px;
+    width: 90%;
+    margin: auto auto 4.6em auto;
+  }
+  .search-btn {
+    font-size: 1rem;
+    margin: 0.1em 0.1em 0.1em auto;
+    padding: 0.5em 0.4em 0.5em 0.6em;
+  }
+  .search-input {
+    font-size: 1rem;
+    margin-left: 0.3em;
   }
   /* ----------------Hikes Section ------------------- */
   .main-container {
@@ -367,7 +419,6 @@ button:focus,
     font-size: 1.1rem;
   }
 }
-
 @media (min-width: 1200px) {
   main {
     margin: 0 3em;
@@ -428,27 +479,14 @@ button:focus,
   /* ----------------Hero------------------- */
   .hero-container {
     height: 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-    margin: 0;
   }
-  .hero-heading,
   .hero-heading {
     font-size: 4.25rem;
     margin-left: 0.7em;
   }
   .hero-text {
     font-size: 1.6rem;
-    font-weight: 500;
     margin-left: 1.9em;
-  }
-  .left {
-    opacity: 0.8;
-    background: #232323;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .search-container {
     border-radius: 6px;
@@ -457,22 +495,16 @@ button:focus,
   }
   .search-btn {
     font-size: 2rem;
-    margin: 0.1em 0.1em 0.1em auto;
     padding: 0.1em 0.4em 0.1em 0.6em;
   }
   .search-input {
     font-size: 1.3rem;
-    margin-left: 0.3em;
   }
   /* ----------------Hikes Section ------------------- */
   .hike-container {
     display: grid;
     grid-template-columns: 1fr 60px 1fr;
-    grid-template-areas:
-      "title title title"
-      "img-1 img-1 info-1"
-      "info-2 img-2 img-2"
-      "img-3 img-3 info-3";
+    grid-template-areas: "title title title" "img-1 img-1 info-1" "info-2 img-2 img-2" "img-3 img-3 info-3";
     grid-row-gap: 3em;
   }
   .hikes-heading {

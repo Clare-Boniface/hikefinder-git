@@ -23,7 +23,6 @@
   color: black;
   display: inline-block;
 }
-
 @media (min-width: 768px) {
   .map-hidden {
     display: none;
@@ -41,16 +40,12 @@
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1200px) {
   .tryon,
   .marquam,
   .wildwood {
     display: grid;
-    grid-template-areas:
-      "heading img"
-      "rating img"
-      "text text";
+    grid-template-areas: "heading img" "rating img" "text text";
   }
   .tryon-title,
   .marquam-title,
@@ -76,20 +71,15 @@
     border-bottom: 1px solid #a8a8a8;
     padding-bottom: 2.8em;
   }
-
   .wildwood-text {
     grid-area: text;
   }
   .trails-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "tryon map"
-      "marquam map"
-      "wildwood map";
+    grid-template-areas: "tryon map" "marquam map" "wildwood map";
     gap: 2em;
   }
-
   .trail-heading {
     grid-area: heading;
     margin-top: 65px;
